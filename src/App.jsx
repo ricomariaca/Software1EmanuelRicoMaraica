@@ -8,6 +8,7 @@ function App() {
 
     const [category, setCategory] = useState("")
 
+    //are called components
     return (
         <div>
             <h1>Buscador de gifs</h1>
