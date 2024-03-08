@@ -20,15 +20,10 @@ const AddCategory = ({ setCategory }) => {
 
     }
 
-
-
-
     return (
         //creation of the search engine in a fragment
 
         <>
-
-            {value}
             <form onSubmit={serchGif}>
                 <input type="text" placeholder="Ingresa tu categoria"
                     //set the placeholder to setValue

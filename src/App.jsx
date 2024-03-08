@@ -1,5 +1,6 @@
 import AddCategory from "./components/AddCategory"
 import React, { useState } from "react";
+import ShowGif from "./components/ShowGif";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <div>
             <h1>Buscador de gifs</h1>
             <AddCategory setCategory={setCategory} />
+            <ShowGif category={category}/>
         </div>
 
     )
