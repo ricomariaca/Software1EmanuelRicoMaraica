@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ddc9c9;
+}
+
+.form_serch {
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.gif_container {
+
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.gif_container div img {
+
+    border-radius: 30px;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+.App {
+
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.input{
+
+font-size: inherit;
+padding: 8px 10px;
+outline: none;
+border: solid;
+text-align: center;
+width: 180px;
+border-radius: 15px;
+}

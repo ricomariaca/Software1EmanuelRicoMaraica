@@ -24,8 +24,8 @@ const AddCategory = ({ setCategory }) => {
         //creation of the search engine in a fragment
 
         <>
-            <form onSubmit={serchGif}>
-                <input type="text" placeholder="Ingresa tu categoria"
+            <form className="form_serch" onSubmit={serchGif}>
+                <input className="input" type="text" placeholder="Ingresa tu categoria"
                     //set the placeholder to setValue
                     onChange={Event => setValue(Event.target.value)}
                 />

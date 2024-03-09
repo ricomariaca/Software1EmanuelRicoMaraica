@@ -13,7 +13,7 @@ const ShowGif = ({ category }) => {
 
         //make the call with the end point
 
-        <div>
+        <div className='gif_container'>
 
             {
                 //a conditional is made so as not to make an empty mapping

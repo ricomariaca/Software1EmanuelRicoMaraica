@@ -10,7 +10,7 @@ function App() {
 
     //are called components
     return (
-        <div>
+        <div className="App">
             <h1>Buscador de gifs</h1>
             <AddCategory setCategory={setCategory} />
             <ShowGif category={category}/>
