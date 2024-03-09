@@ -4,8 +4,8 @@ const Api = (url) => {
 
     //creation of the state
 
-    const [data, setData] = useState(null)
-    const [upload, setUpload] = useState(false)
+    const [data, setData] = useState(null);
+    const [upload, setUpload] = useState(false);
 
     //a function is created that fetches the response with promises and parses and returns the response. 
 
@@ -13,15 +13,17 @@ const Api = (url) => {
         fetch(url)
             .then(answer => answer.json())
             .then(answerJson => {
-
-                console.log(answerJson)
+                //finalize the load 
+                setUpload(true);
+                setData(answerJson.data)
             })
             .catch(error => console.log(error))
     }
-
+    //have it called
     useEffect(() => {
         fetchApi();
-    })
+        //so that it does not have an inifinite cycle
+    }, [url])
 
     return { upload, data }
 }
